@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Đăng Ký Gặp Mặt CLB IoT - Hutech</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/img/faviconKhanhNey.png"  />
+  <!-- bootstrap & fontawesome css -->
+  <link href="http://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.1.0/css/font-awesome.min.css" />
+
+  <!-- BootstrapValidator CSS -->
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <!-- BootstrapValidator JS -->
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+
+  <!-- Animated Loading Icon -->
+  <style type="text/css">
+  .glyphicon-refresh-animate {
+      -animation: spin .7s infinite linear;
+      -webkit-animation: spin2 .7s infinite linear;
+  }
+  @-webkit-keyframes spin2 {
+      from { -webkit-transform: rotate(0deg);}
+      to { -webkit-transform: rotate(360deg);}
+  }
+  @keyframes spin {
+      from { transform: scale(1) rotate(0deg);}
+      to { transform: scale(1) rotate(360deg);}
+  }
+  body{
+    background-image: url('/img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .col-customer{
+    opacity: 1;
+    margin: 200px 0 0 0;
+  }
+  .form-group{
+    display: block;
+    left: 0;
+    margin-left: 0;
+  }
+  .form-wrapper{
+    margin-top: 320px;
+  }
+  </style>
+</head>
+<body>
+</head>
+
+<body>
+
+  <!-- <div class="row">
+    <div class="col-lg-12">
+      <h1><strong><a href="https://www.facebook.com/FossHutech/">Trang Chủ Fanpage</a> CLB Mã Nguồn Mở - IoT - Hutech</strong></h1>
+    </div>
+  </div> -->
+
+  <div class="row">
+      <div class="col-sm-6 form-wrapper">
+        <form class="form-horizontal" role="form" id="test-form">
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Họ Và Tên</label>
+            <div class="col-lg-3 inputGroupContainer">
+              <div class="input-group">
+                <input type="text" class="form-control" name="firstName" placeholder="Lê Duy Khánh"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">MSSV</label>
+            <div class="col-lg-3 inputGroupContainer">
+              <div class="input-group">
+                <input type="text" class="form-control" name="mssv" placeholder="151106xxxx"/>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Số Điện Thoại</label>
+            <div class="col-lg-3 inputGroupContainer">
+              <div class="input-group">
+                <input type="text" class="form-control" name="phone" placeholder="0964.209.xxx"/>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Email</label>
+            <div class="col-lg-3 inputGroupContainer">
+              <div class="input-group">
+                <input type="text" class="form-control" name="email" placeholder="name@domain.com"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Địa Chỉ</label>
+            <div class="col-lg-3 inputGroupContainer">
+              <div class="input-group col-lg-10">
+                <textarea type="text" class="form-control" name="address" placeholder="Địa Chỉ tại đây" rows="4" style="resize: vertical;"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Mong Muốn đến CLB</label>
+            <div class="col-lg-3 inputGroupContainer">
+              <div class="input-group col-lg-10">
+                <textarea type="text" class="form-control" name="notes" placeholder="Câu Hỏi gửi CLB" rows="4" style="resize: vertical;"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-lg-9 col-lg-offset-3">
+              <button type="submit" class="btn btn-default" id="postForm">Đăng Ký</button>
+            </div>
+          </div>
+
+        </form>
+
+        </div>
+
+  </div>
+</body>
+
+<footer>
+<script src="validation-functions.js"></script>
+</footer>
+
+</html>
